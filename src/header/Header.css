@@ -1,0 +1,122 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  height: 4rem;
+  box-shadow: var(--dark-shadow);
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.header-content {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-menu img {
+  width: fit-content;
+}
+
+.nav-toggle {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-toggle:hover {
+  transform: scale(1.2);
+}
+
+.navigation ul {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-links ul {
+  position: absolute;
+  z-index: -1;
+  /* background-color: var(--clr-white); */
+  top: 2.9rem;
+  left: 0;
+  width: 80%;
+  height: 250px;
+  /* border-radius: 15px; */
+}
+
+.navigation > ul a {
+  display: block;
+  padding: 1rem 2rem;
+  letter-spacing: var(--spacing);
+  color: var(--clr-grey-1);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.navigation > ul a:hover {
+  color: var(--clr-primary-1);
+  background: var(--clr-primary-8);
+  padding-left: 2.25rem;
+}
+
+.social-media {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation ul {
+    height: auto;
+    display: flex;
+  }
+
+  .navigation ul a {
+    padding: 0 0;
+    margin-right: 0.8rem;
+  }
+
+  .navigation ul a:hover {
+    padding: 0;
+    background: transparent;
+    color: var(--clr-primary-5);
+  }
+
+  .social-media {
+    display: flex;
+  }
+
+  .social-media a {
+    color: var(--clr-primary-5);
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+    transition: var(--transition);
+  }
+
+  .social-media a:hover {
+    color: var(--clr-primary-8);
+  }
+}
