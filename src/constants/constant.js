@@ -26,8 +26,8 @@ const services = [
 ]
 
 const socialMedia = [
-    { id: 'facebook', link: "https://www.facebook.com/", iconClass: 'fa-facebook' },
-    { id: 'twitter', link: 'https://twitter.com/', iconClass: 'fa-twitter' },
+    { id: 'facebook', link: "https://www.facebook.com/Manu.karki555", iconClass: 'fa-facebook' },
+    { id: 'twitter', link: 'https://twitter.com/ManishK67188205', iconClass: 'fa-twitter' },
     { id: 'squareSpace', link: 'https://www.squarespace.com/', iconClass: 'fa-squarespace' }
 ]
 

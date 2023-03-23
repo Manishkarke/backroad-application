@@ -6,7 +6,7 @@ function SocialMedia() {
     <div className='social-media'>
       {socialMedia.map(({ id, link, iconClass }) => {
         return (
-          <a href={link}>
+          <a key={id} href={link}>
             <i className={`fab ${iconClass}`} />
           </a>
         );
