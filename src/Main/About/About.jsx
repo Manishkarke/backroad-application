@@ -1,15 +1,12 @@
 import React from "react";
 import "./About.css";
 import { about } from "../../assets";
+import SectionTitle from "../../UI/SectionTitle";
 
 function About() {
   return (
     <section className='section' id='about'>
-      <div className='section-title'>
-        <h2>
-          About <span>Us</span>
-        </h2>
-      </div>
+      <SectionTitle title='About Us' />
 
       <article className='section-center about-center'>
         <div className='about-image'>

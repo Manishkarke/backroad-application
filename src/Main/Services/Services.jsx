@@ -1,16 +1,13 @@
 import React from "react";
 import { services } from "../../constants/constant";
+import SectionTitle from "../../UI/SectionTitle";
 import Service from "./Service";
 import "./Services.css";
 
 function Services() {
   return (
     <section className='section services' id='services'>
-      <div className='section-title'>
-        <h2>
-          Our <span>Services</span>
-        </h2>
-      </div>
+      <SectionTitle title='Our Services' />
 
       <article className='section-center services-center'>
         {services.map(({ iconClass, title, detail }, index) => {

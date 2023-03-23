@@ -6,7 +6,6 @@ import "./Header.css";
 
 function Header() {
   const [toggle, setToggle] = useState(false);
-  // const [icon, setIcon] = useState('fa-bars')
   return (
     <header className='header-container'>
       <div className='header-content'>
